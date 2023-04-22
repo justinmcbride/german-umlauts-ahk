@@ -15,7 +15,7 @@ jobs:
       - name: Install AutoHotKey
         uses: crazy-max/ghaction-chocolatey@v1.4.0
         with:
-          args: install -y --no-progress autohotkey.portable
+          args: install -y --no-progress autohotkey.portable --version=1.1.36.02
       - name: Compile Script
         run: |
           C:\ProgramData\chocolatey\lib\autohotkey.portable\tools\Compiler\Ahk2Exe.exe /in GermanUmlauts.ahk /out GermanUmlauts.exe
